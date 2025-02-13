@@ -823,7 +823,7 @@ class Econometrics:
             self.model.fit(X, y)
             self.y_pred = self.model.predict(X)
 
-            self.mse = mean_square_error(self.y, self.y_pred)
+            self.mse = mean_squared_error(self.y, self.y_pred)
             self.r2 = r2_score(self.y, self.y_pred)
 
         def plot_linear_regression(self, ):
@@ -888,3 +888,4 @@ def fill_nan_linear(data):
 
 # 2024.11.17 - new class Econometrics
 # 2024.12.01 - new class Beta
+# 2025.02.13 - last edit
